@@ -1,0 +1,59 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(ellipse at top, #111 0%, #000 100%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff0047, #7c00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 3px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff0047; }
+  to { text-shadow: 0 0 30px #7c00ff; }
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px rgba(255, 0, 71, 0.3);
+}
+
+canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  padding: 2rem 0;
+  border-top: 1px solid #222;
+  margin-top: 4rem;
+}
